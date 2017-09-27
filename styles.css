@@ -1,3 +1,7 @@
+body {
+    font-family: 'Comfortaa';
+}
+
 .gradient {
     background: #0C2459; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left top, #0C2459, #000000); /* For Safari 5.1 to 6.0 */
@@ -47,34 +51,72 @@
     background-color: #f7f7f7;
 }
 
-
-.page-header {
-    color: #000000;
-    padding: 180px 25px;
-    background: url("img/pallets1.jpg") no-repeat center center;
-    min-height: 750px;
-    max-width: 100%;
-    position: relative;
-
+header.masthead {
+    background: url('img/pallet-main.JPG') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.background-light-blue {
-    background-color: #D4E5EF
+header.masthead>.overlay {
+    padding: 25rem 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    padding-top: 54px;
+}
+
+.text-white {
+    color: #f7f7f7;
+    font-size: 5em;
+}
+
+
+.background-grey {
+    background-color: #F5F5F5
 }
 
 .container-fluid {
     padding: 60px 50px;
 }
 
-.logo {
-    font-size: 200px;
+.logo-fabric {
     color: #113789;
+    font-size: 150px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text!important;
+    background: linear-gradient(to right, #113789, #000000,#113789, #000000,#113789, #000000,#113789, #000000,#113789, #000000,#113789, #000000,#113789, #000000,#113789, #000000,#113789, #000000);
 }
 
-.logo-small {
-    color: #113789;
-    font-size: 80px;
+.logo-color {
+    font-size: 150px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text!important;
+    background: linear-gradient(red, orange, yellow, green, cyan, blue, violet);
 }
+
+.logo-heart {
+    color: #e30b5d;
+    font-size: 150px;
+}
+
+.logo-comfort {
+    font-size: 150px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text!important;
+    background: radial-gradient( yellow, orange, red);
+}
+
+.img-round {
+    border-radius: 50px;
+}
+
 
 .thumbnail {
     padding: 0;
