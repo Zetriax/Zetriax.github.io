@@ -1,3 +1,4 @@
 # https://zetriax.github.io/
 1st GitHub page - Koprowski Marek
-Strona Firmy, która specjalizuje się w wykonywaniu mebli z palet.
+Pallets - Company Webpage, that specialize in creating furnitures by using wooden pallets.
+Responsive, made in Bootstrap.
