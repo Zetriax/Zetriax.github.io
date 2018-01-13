@@ -9,26 +9,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
 </head>
-<script>
-    var i = 0;
-    var txt = 'WHAT WE OFFER';
-    var speed = 250;
 
-    function showOffer() {
-        document.getElementById("offer").classList.remove("hidden");
-        document.getElementById("button").classList.add("hidden");
-        typeWriter();
-    }
-
-    function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("typing").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-    }
-</script>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top gradient">
     <div class="container">
@@ -247,5 +230,6 @@
         </div>
     </div>
 </footer>
+<script src="js/typeWriter.js"></script>
 </body>
 </html>
