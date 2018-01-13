@@ -52,7 +52,7 @@ body {
 }
 
 header.masthead {
-    background: url('img/pallet-main.JPG') no-repeat center center scroll;
+    background: url('../img/pallet-main.JPG') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
