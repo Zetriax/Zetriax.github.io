@@ -10,6 +10,25 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 </head>
+<script>
+    var i = 0;
+    var txt = 'WHAT WE OFFER';
+    var speed = 250;
+
+    function showOffer() {
+        document.getElementById("offer").classList.remove("hidden");
+        document.getElementById("button").classList.add("hidden");
+        typeWriter();
+    }
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("typing").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 <nav class="navbar navbar-default navbar-fixed-top gradient">
     <div class="container">
@@ -58,41 +77,47 @@
     </div>
 </div>
 
-<div id="offer" class="container-fluid text-center background-grey">
-    <h2>WHAT WE OFFER</h2>
-    <br>
-    <div class="row">
-        <div class="col-sm-6">
-            <span class="glyphicon glyphicon-tint logo-color"></span>
-            <h3>COLOR</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis cumque, cupiditate doloribus
-                et iste iusto labore nobis nostrum numquam porro qui quibusdam repellat sit tenetur velit voluptas
-                voluptatibus voluptatum.</p>
+<button id="button" type="button" class="btn btn-info btn-lg btn-block" onclick="showOffer()">Click me</button>
+
+<div id="offer" class="container-fluid text-center background-grey hidden">
+        <h2 id="typing"></h2>
+        <br>
+        <div class="row">
+            <div class="col-sm-6">
+                <span class="glyphicon glyphicon-tint logo-color"></span>
+                <h3>COLOR</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis cumque, cupiditate
+                    doloribus
+                    et iste iusto labore nobis nostrum numquam porro qui quibusdam repellat sit tenetur velit voluptas
+                    voluptatibus voluptatum.</p>
+            </div>
+            <div class="col-sm-6">
+                <span class="glyphicon glyphicon-bed logo-fabric"></span>
+                <h3>FABRIC</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fuga fugit magnam, repudiandae
+                    sed
+                    soluta totam ullam. Ab, consectetur consequatur debitis earum facere maxime molestias nihil pariatur
+                    praesentium repellat temporibus.</p>
+            </div>
         </div>
-        <div class="col-sm-6">
-            <span class="glyphicon glyphicon-bed logo-fabric"></span>
-            <h3>FABRIC</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus fuga fugit magnam, repudiandae sed
-                soluta totam ullam. Ab, consectetur consequatur debitis earum facere maxime molestias nihil pariatur
-                praesentium repellat temporibus.</p>
-        </div>
-    </div>
-    <br><br>
-    <div class="row">
-        <div class="col-sm-6">
-            <span class="glyphicon glyphicon-heart logo-heart"></span>
-            <h3>DESIGN</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta distinctio eaque iste
-                laborum tempora tempore tenetur unde. Deleniti eius et illo impedit inventore iusto, labore laborum
-                magni molestiae perferendis.</p>
-        </div>
-        <div class="col-sm-6">
-            <span class="glyphicon glyphicon-certificate logo-comfort"></span>
-            <h3>COMFORT</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur cumque dolorem dolores,
-                fugit harum non provident quasi, reprehenderit sequi temporibus, totam voluptate. Consectetur deleniti
-                eum porro soluta, tempora ullam..</p>
-        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <span class="glyphicon glyphicon-heart logo-heart"></span>
+                <h3>DESIGN</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta distinctio eaque iste
+                    laborum tempora tempore tenetur unde. Deleniti eius et illo impedit inventore iusto, labore laborum
+                    magni molestiae perferendis.</p>
+            </div>
+            <div class="col-sm-6">
+                <span class="glyphicon glyphicon-certificate logo-comfort"></span>
+                <h3>COMFORT</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur cumque dolorem
+                    dolores,
+                    fugit harum non provident quasi, reprehenderit sequi temporibus, totam voluptate. Consectetur
+                    deleniti
+                    eum porro soluta, tempora ullam..</p>
+            </div>
     </div>
 </div>
 <div id="gallery" class="container-fluid text-center">
@@ -206,16 +231,18 @@
     <div class="container">
         <div class="col-sm-4 flex-item">
             <p>Link to contact with author :</p>
-            <a target="_blank" href="https://github.com/Zetriax/Zetriax.github.io"><img src="img/github.png" height="114" width="114"/>
+            <a target="_blank" href="https://github.com/Zetriax/Zetriax.github.io"><img src="img/github.png"
+                                                                                        height="114" width="114"/>
                 <p>GitHub Repository</p></a>
         </div>
         <div class="col-sm-4 flex-item">
             <img src="img/mail.png" height="114" width="114"/>
-                <p>Contact via email: marek_koprowski@o2.pl</p></a>
+            <p>Contact via email: marek_koprowski@o2.pl</p></a>
         </div>
         <div class="col-sm-4 flex-item">
             <p>Other authors projects :</p>
-            <a target="_blank" href="http://dreamers.jfdz6.is-academy.pl"><img src="img/favicon.png" height="114" width="114"/>
+            <a target="_blank" href="http://dreamers.jfdz6.is-academy.pl"><img src="img/favicon.png" height="114"
+                                                                               width="114"/>
                 <p>Dreamers</p></a>
         </div>
     </div>
